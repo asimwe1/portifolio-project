@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { useState } from "react";
 import { TiThMenu } from "react-icons/ti";
+import { IoMdClose } from "react-icons/io";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -29,14 +30,16 @@ export default function Navbar() {
 
       <div className="flex justify-between m-3 text-redBrick-100 text-2xl">
         <h2 className=" font-bold  ">Logo</h2>
-        <TiThMenu className="md:hidden" onClick={handleClick} />
+        <div className="md:hidden cursor-pointer" onClick={handleClick}>
+          {isVisible ? <IoMdClose /> : <TiThMenu />}
+        </div>
       </div>
 
       <nav className="">
         <div
-          className={` ${
-            isVisible ? "flex" : "hidden"
-          } md:hidden flex-col items-center justify-center w-full h-[90vh]`}
+          className={`fixed top-12 ${
+            isVisible ? "top-0" : "-top-full"
+          } md:hidden flex flex-col items-center justify-center w-full h-[90vh] transition-all duration-700  ease-in-out`}
         >
           {navLinks.map((link, i) => (
             <div className="my-2" key={i}>
@@ -54,7 +57,7 @@ export default function Navbar() {
             </div>
           ))}
           <Link
-            href={""}
+            href=""
             className="text-[14px] text-white bg-redBrick-100 px-4 py-2 rounded-[20px]"
           >
             GET QUOTE
