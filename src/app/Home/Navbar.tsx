@@ -25,10 +25,11 @@ export default function Navbar() {
   };
 
   return (
-    <div className="md:flex md:items-center">
+    <div className="md:flex md:items-center md:mx-10">
       {/* The mobile links */}
 
       <div className="flex justify-between m-3 text-redBrick-100 text-2xl">
+        {/* Replace with our own logo */}
         <h2 className=" font-bold  ">Logo</h2>
         <div className="md:hidden cursor-pointer" onClick={handleClick}>
           {isVisible ? <IoMdClose /> : <TiThMenu />}
@@ -39,11 +40,12 @@ export default function Navbar() {
         <div
           className={`fixed top-12 ${
             isVisible ? "top-0" : "-top-full"
-          } md:hidden flex flex-col items-center justify-center w-full h-[90vh] transition-all duration-700  ease-in-out`}
+          } md:hidden bg-slate-100 flex flex-col items-center justify-center w-full h-[90vh] transition-all duration-700  ease-in-out`}
         >
           {navLinks.map((link, i) => (
             <div className="my-2" key={i}>
               <Link
+                onClick={handleClick}
                 className={clsx(
                   "text-[14px] hover:text-redBrick-100 duration-300",
                   {
@@ -58,7 +60,7 @@ export default function Navbar() {
           ))}
           <Link
             href=""
-            className="text-[14px] text-white bg-redBrick-100 px-4 py-2 rounded-[20px]"
+            className="text-[14px] text-white bg-redBrick-100 px-4 py-2 rounded hover:bg-red-800 duration-500"
           >
             GET QUOTE
           </Link>
@@ -83,12 +85,9 @@ export default function Navbar() {
             </Link>
           </div>
         ))}
-        <Link
-          href={""}
-          className="text-[14px] text-white bg-redBrick-100 px-4 py-2 rounded-[20px]"
-        >
+        <button className="text-[14px] text-white bg-redBrick-100 px-4 py-2 rounded-[20px] hover:bg-red-800 duration-500">
           GET QUOTE
-        </Link>
+        </button>
       </nav>
     </div>
   );
