@@ -13,6 +13,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        redBrick: {
+          "100": "rgb(248, 77, 77)",
+        },
+      },
     },
   },
   plugins: [],
