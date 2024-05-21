@@ -7,7 +7,7 @@ import Userfooter from "../pages/footer";
 
 const UserHome = () => {
   return (
-    <div >
+    <div className="sm-scrollbar" >
       <div>
         <OurServices />
       </div>

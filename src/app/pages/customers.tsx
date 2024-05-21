@@ -38,12 +38,13 @@ const Usercustomers = () => {
             <div className="h-[25rem] w-[50rem] bg-white shadow-2xl text-center ">
 
               <Image
-                className="w-20 h-20 rounded-[50%] mx-[35%] my-16"
+                className="w-[10rem] h-[10rem] rounded-[50%] hover:rounded-[25%] mx-[25%] my-5"
                 src='/785a1b9c359640da6bc9cfe3670b42ba.jpg'
                 alt=""
                 width={500}
                 height={500}
               />
+
               <p className="text-[13px] px-4">
                 Excellent in their work and happy and motivated to work with them and also they offer the best services that i have ever seen in <br /> all of the
                 companies that i have worked with different things
@@ -55,12 +56,13 @@ const Usercustomers = () => {
             <div className="h-[25rem] w-[50rem] bg-white shadow-2xl text-center ">
 
               <Image
-                className="w-20 h-20 rounded-[50%] mx-[35%] my-16"
+                className="w-[10rem] h-[10rem] rounded-[50%] hover:rounded-[25%] mx-[25%] my-5"
                 src='/785a1b9c359640da6bc9cfe3670b42ba.jpg'
                 alt=""
                 width={500}
                 height={500}
               />
+
               <p className="text-[13px] px-4">
                 Excellent in their work and happy and motivated to work with them and also they offer the best services that i have ever seen in <br /> all of the
                 companies that i have worked with different things

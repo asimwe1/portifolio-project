@@ -18,7 +18,7 @@ const Userfaqs = () => {
                 <h1 className="text-center text-red-500 ">Frequently asked questions</h1>
                 <h2 className="text-black text-center font-bold text-[30px]" > FAQ</h2>
               <div
-            className={`mx-[10rem] w-[800px] shadow-md my-[5rem] ${
+            className={`mx-[10rem] shadow-md my-[5rem] ${
               isExpanded ? "h-[100px]" : "h-[50px]"
             }`}
           >
@@ -41,7 +41,7 @@ const Userfaqs = () => {
             )}
           </div>
           <div
-            className={`mx-[10rem] w-[800px] shadow-md my-[5rem] ${
+            className={`mx-[10rem] shadow-md my-[5rem] ${
               isExpanded ? "h-[100px]" : "h-[50px]"
             }`}
           >
@@ -64,7 +64,7 @@ const Userfaqs = () => {
             )}
           </div>
           <div
-            className={`mx-[10rem] w-[800px] shadow-md my-[5rem] ${
+            className={`mx-[10rem] shadow-md my-[5rem] ${
               isExpanded ? "h-[100px]" : "h-[50px]"
             }`}
           >
@@ -87,7 +87,7 @@ const Userfaqs = () => {
             )}
           </div>
           <div
-            className={`mx-[10rem] w-[800px] shadow-md my-[5rem] ${
+            className={`mx-[10rem] shadow-md my-[5rem] ${
               isExpanded ? "h-[100px]" : "h-[50px]"
             }`}
           >
